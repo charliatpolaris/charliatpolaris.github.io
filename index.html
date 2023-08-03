@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mal Jayapura</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- FontAwesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+
+  </head>
+  <body>
+    
+    <header class="sticky-sm-top">
+    <!-- Nama Brand Mall / Plaza -->
+    <div class="container-fluid bg-dark text-white">
+	    
+    	<div class="col col-lg-12 navbar-brand py-1 px-0 me-0 text-center">
+        <h2 class="title">
+    		<!-- <a class="text-decoration-none text-white text-capitalize" href="#">Mal Jayapura</a> -->
+        <a href="index.html">
+          <img src="assets/img/header.png" width="300px" alt="">
+        </a>
+          <p class="text-footer">
+            My Life, My Style, My Lifestyle
+          </p>
+       
+      </h2>
+    	</div>    
+
+    </div>
+    
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg bg-light w-10">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="shop.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="dine.html">DINE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="whats_on.html">WHAT'S ON</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item" style="border-left: 1px solid black;">
+              <select class="form-select title" name="" id="listMall" style="margin-left: 10px;">
+                <option value="">Mal Jayapura</option>
+                <option value="https://id.wikipedia.org/wiki/Ambon_Plaza">Ambon Plaza</option>
+                <option value="">Sorong Mall</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <!-- Menu untuk pindah halaman Web ke Mall/Plaza yang lain -->
+    <!-- <div class="container-fluid bg-white justify-content-center">
+
+      <div class="col-sm-2 mx-auto my-2">
+        <select class="form-select text-center title" name="" id="listMall" >
+          <option value="">Mal Jayapura</option>
+          <option value="https://id.wikipedia.org/wiki/Ambon_Plaza">Ambon Plaza</option>
+          <option value="">Sorong Mall</option>
+        </select>
+      </div>
+    </div> -->
+
+    <!-- Carousel untuk Gambar Profile Mall -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel-1.jpg" class="d-block w-100 carousel-img img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel-2.jpg" class="d-block w-100 carousel-img img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel-3.jpg" class="d-block w-100 carousel-img img-fluid" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Bagian promosi atau yang lagi happening di Mall/Plaza -->
+    <div class="container-sm container-fluid my-5 justify-content-center">
+      <div class="col col-lg-8 mx-auto navbar-brand text-center ">
+      <h2 class="section-title">
+        Happening
+      </h2>
+      <div class="row row-cols-1 row-cols-md-3 g-2 ">
+        <a href="" data-bs-toggle="modal" data-bs-target="#promo1">
+        <div class="col reveal">
+          <div class="card h-100 promo-card">
+            <img src="https://maljayapura.com/wp-content/uploads/2021/06/IG-Mall-june-X8-2021-ses3_-jayapura.jpg" class="card-img-top" alt="...">            
+            <div class="overlay">
+              <div class="text-promo">X8</div>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="#">
+        <div class="col reveal">
+          <div class="card h-100 promo-card">
+            <img src="https://maljayapura.com/wp-content/uploads/2021/06/WM-Mall-IG-Mal-Jayapura-1.jpg" class="card-img-top" alt="...">            
+            <div class="overlay">
+              <div class="text-promo">WHITEMODE</div>
+            </div>
+          </div>
+        </div>
+        </a>
+        <div class="col reveal">
+          <div class="card h-100 promo-card">
+            <img src="https://maljayapura.com/wp-content/uploads/2019/12/74455866_2397233417195936_2724332704001687552_o.jpg" class="card-img-top" alt="...">            
+            <div class="overlay">
+              <div class="text-promo">J.CO</div>
+            </div>
+          </div>
+        </div>
+        <a href="#">
+        <div class="col reveal">
+          <div class="card h-100 promo-card">
+            <img src="https://maljayapura.com/wp-content/uploads/2019/12/72703594_2388694671383144_1641795744757186560_o.jpg" class="card-img-top" alt="...">            
+            <div class="overlay">
+              <div class="text-promo">Wins Cafe</div>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="#">
+        <div class="col reveal">
+          <div class="card h-100 promo-card">
+            <img src="https://maljayapura.com/wp-content/uploads/2019/12/71201022_2367948320124446_4484606547548176384_o.jpg" class="card-img-top" alt="...">            
+            <div class="overlay">
+              <div class="text-promo">BreadTalk</div>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="#">
+        <div class="col reveal">
+          <div class="card h-100 promo-card">
+            <img src="https://maljayapura.com/wp-content/uploads/2019/12/70754344_2367948276791117_4244012272151691264_o.jpg" class="card-img-top" alt="...">            
+            <div class="overlay">
+              <div class="text-promo">BreadTalk</div>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+      
+    <a href="#" class="btn btn-primary mt-2 justify-content-center rounded-pill" style="font-size: 10px;">LOAD MORE</a>
+    </div>    
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="promo1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">X8 Clothing Promo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">
+            <img src="https://maljayapura.com/wp-content/uploads/2021/06/IG-Mall-june-X8-2021-ses3_-jayapura.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-6">
+            <p class="promo-caption">
+              Life isn’t perfect, but your outfit can be. <br>
+              Come and Visit our store, GET YOUR STYLE 😍🧡 <br>
+            </p>
+            <p class="promo-caption">
+              @x8clothing <br>
+              @x8catalog <br>
+            </p>
+    
+            <p class="promo-caption">
+              #X8 #detailsmatter #fashionmen #fashionladies
+            </p>
+
+            <p class="promo-caption">
+              
+                Floor : <b>GF-2</b>
+              |              
+                Contact : <b>08123456800</b> 
+      
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light " data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Bagian Announcement -->
+  <div class="container-fluid px-0 reveal">
+    <div class="row gx-0 color-block-top"></div>
+    <div class="row gx-0">
+      <div class="col">
+        <img src="assets/img/banner.png" class="img-fluid " alt="">
+      </div>
+    </div>
+    <div class="row gx-0  color-block-top"></div>
+  </div>
+
+  <!-- Bagian Social Media Account -->
+  <div class="container-fluid mt-5 mb-5 text-center">
+    <h2 class="section-title">
+      Follow Our Social Media
+    </h2>
+
+    <div class="col col-sm-8 mx-auto navbar-brand text-center">
+      
+      <a href="https://www.facebook.com/maljayapuraPAPUA" style="text-decoration: none;">
+        <img src="assets/img/facebook.png" alt="Facebook Mal Jayapura" class="img-fluid social">
+      </a>
+
+      <a href="https://twitter.com/Mal_Jayapura" style="text-decoration: none;">
+        <img src="assets/img/twitter.png" alt="Twitter Mal Jayapura" class="img-fluid social">
+      </a>
+
+      <a href="https://www.instagram.com/maljayapura" style="text-decoration: none;">
+        <img src="assets/img/instagram.png" alt="Instagram Mal Jayapura" class="img-fluid social">
+      </a>
+
+      <a href="https://www.youtube.com/channel/UCjGGrRi1W7ye4OdSStZwr8g?themeRefresh=1" style="text-decoration: none;">
+        <img src="assets/img/youtube.png" alt="Youtube Mal Jayapura" class="img-fluid social">
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- Bagian Footer -->
+  <div class="container-fluid bg-dark text-white">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top ">
+     
+      <div class="col">
+        <h6 class="company-logo">MEMBER OF</h6>
+        <img class="company-logo img-fluid" src="assets/img/logo-mmp.png" alt="Logo Modern Multi Properti">
+        <p class="company-logo footer-text">
+          Copyright &copy; 2023 Mal Jayapura <br> 
+          All rights reserved
+        </p>
+      </div>
+      <div class="col mb-3">
+       <h6>LOCATION</h6>
+
+       <p class="footer-text">
+       Jalan Sam Ratulangi APO <br>
+       Kelurahan Bhayangkara <br>
+       Kecamatan Jayapura Utara <br>
+       Jayapura, Indonesia
+       </p>
+
+       <p class="footer-text">
+        Phone : (0967) 5150000
+       </p>
+
+      </div>
+
+      <div class="col mb-3">
+        <h6>LINKS</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-text">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-text">Shop</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-text">Dine</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-text">What's On</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-text">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h6>LINKS</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-text">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-text">Shop</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-text">Dine</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-text">What's On</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-text">About Us</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h6>OUR MOBILE APPS</h6>
+        <p>
+          <a href="#">
+            <img src="assets/img/google-play.png" alt="">
+          </a> 
+          <a href="#">
+            <img src="assets/img/app-store.png" alt="">
+          </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Back to top button -->
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+    <script>
+        $(document).ready(function(){
+	      $(window).scroll(function () {
+			  if ($(this).scrollTop() > 50) {
+				  $('#back-to-top').fadeIn();
+		  	}   else {
+			  	$('#back-to-top').fadeOut();
+			  }
+		  });
+		  // scroll body to 0px on click
+	    	$('#back-to-top').click(function () {
+			  $('body,html').animate({
+				  scrollTop: 0
+			  }, 400);
+			  return false;
+		    });
+      });
+    </script>
+
+    <script>
+
+        function reveal() {
+          var reveals = document.querySelectorAll(".reveal");
+
+          for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+              reveals[i].classList.add("active");
+            } else {
+              reveals[i].classList.remove("active");
+            }
+          }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+      </script>
+  
+      <!-- Perpindahan Mall -->
+      <script>
+          $('#listMall').on('change', function () {
+          var selectVal = $("#listMall option:selected").val();
+          console.log(selectVal)
+          window.location = selectVal;
+      });
+    </script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
