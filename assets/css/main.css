@@ -20,6 +20,21 @@ body{
     font-family: 'Aboreto', cursive;
 }  
 
+a.active {
+  font-weight: bold;
+}
+
+a.nav-link {
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-delay: 0.5s;
+}
+
+a.nav-link:hover{
+  font-weight: bold;
+  
+}
+
 .text-footer {
   font-family: 'Covered By Your Grace', cursive;
   font-size: 0.6em;
@@ -33,7 +48,7 @@ body{
 .carousel-img {
     max-height: 600px;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .sp-background {
